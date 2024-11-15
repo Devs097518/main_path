@@ -94,14 +94,14 @@ body {
 #titulo {
     color: rgb(97, 6, 150);
     font-family: 'chique';
-    font-size: 70px;
+    font-size: 55px;
     
     
     text-shadow: 3px 3px 0 rgb(255, 255, 255);
 }
 
 #euimg {
-    width: 330px;
+    width: 250px;
     height: auto;
     float: center;
     border-radius: 2em;
@@ -113,15 +113,15 @@ body {
 }
 
 #star_img {
-    width: 120px;
+    width: 80px;
     height: auto;
     float: right;
 }
 
 #arvore {
-    width: 300px;
+    width: 280px;
     height: auto;
-    margin-left: 3em;
+    /* margin-left: 3em; */
 
 }
 
@@ -275,6 +275,7 @@ body {
     background-repeat: repeat;
     
     display: flex;
+    margin-bottom: 2em;
     align-items: center;
     justify-content: space-between;
 }
@@ -453,7 +454,7 @@ body {
     height: auto;
     float: right;
     border-radius: 50em;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 #ogif2 {
@@ -462,7 +463,7 @@ body {
 
     float: right;
     border-radius: 50em;
-    margin: 4px 0 4px 100px;
+    margin: 4px 0 4px 75px;
 }
 
 #ogif3 {
@@ -470,7 +471,7 @@ body {
     height: auto;
     float: right;
     border-radius: 50em;
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 
@@ -506,7 +507,7 @@ body {
     /* border-left: black 2px double; */
     float: left;
     font-size: 15px;
-    margin: 0 2em 2em 2em;
+    margin: 0 1em 1em 1em;
     text-align: left;
     text-align: center;
 }
@@ -538,7 +539,6 @@ i {
 
 #bandeija {
     width: 100%;
-    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

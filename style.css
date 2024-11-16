@@ -693,11 +693,11 @@ body {
 }
 
 #textooi {
-    margin-left: 7.5em;
+    /* margin-left: 7.5em; */
     color: rgb(0, 0, 0);
     font-family: 'chique';
     font-size: 4em;
-
+    margin-top: 0;
 }
 
 #barra {
@@ -723,6 +723,7 @@ body {
     border-bottom: black 2px solid;
     border-left: black 2px solid;
     border-right: black 2px solid;
+    
     padding: 2em;
     grid-column: 1/5;
     border-radius: 0 0 15px 15px;
@@ -748,15 +749,16 @@ body {
     border-bottom: black 2px solid;
     border-left: black 2px solid;
     border-right: black 2px solid;
+    
     padding: 2em;
     grid-column: 1/5;
     border-radius: 0 0 15px 15px;
-
+    height: 320px;
 }
 
 #foot1 {
 
-    align-items: center;
+   
     border-bottom: black 2px solid;
     
     border-left: black 2px solid;
@@ -765,15 +767,8 @@ body {
     
     grid-column: 1/5;
     border-radius: 0 0 15px 15px;
-
-    /* align-items: center;
     flex-direction: row;
-    border: black 2px solid;
-    display: flex;
-    
-    padding: 2em;
-    border-radius: 0 0 15px 15px; */
-
+    justify-content: space-around;
 }
 
 
@@ -784,6 +779,7 @@ body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    flex-direction: row;
 }
 
 
@@ -851,6 +847,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 #bu1{
@@ -866,11 +863,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .pre {
     height: 280px;
-    width: 360px;
+    width: 350px;
     display: flex;
     margin: 10px;
     padding: 12px;
@@ -916,6 +914,7 @@ body {
 
 #pre1 {
     border-right: solid 4px black;
+    border-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -926,7 +925,7 @@ body {
 
 #pre2 {
     
-
+    border-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -936,6 +935,7 @@ body {
 
 #pre3 {
     border-left: solid 4px black;
+    border-bottom: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -1075,9 +1075,22 @@ body {
     height: auto;
     padding-left: 3em;
     padding-right: 3em;
+    padding-top: 2em;
     float: left;
     font-size: 15px;
-    text-align: left;
+}
+
+#projetos01 {
+    height: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    float: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+#introbox{
+    width: 400px;
 }
 
 .setas {
@@ -1110,6 +1123,7 @@ i {
     height: 300px;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -1137,7 +1151,6 @@ i {
 
 #gema {
     width: 150px;
-    height: 250px;
     border-radius: 0 0 10em 10em;
     background-color: rgb(188, 153, 253);
     border-top: 2px black solid;

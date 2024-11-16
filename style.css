@@ -148,6 +148,7 @@ body {
 
 .barrinhas {
     text-shadow: 2px 2px 2px white;
+    color: black;
 }
 
 
@@ -301,7 +302,6 @@ body {
     width: 260px;
     display: flex;
     margin: 10px;
-
     padding: 25px;
 
 }
@@ -344,7 +344,7 @@ body {
 }
 
 #pre1 {
-    border-bottom: solid 4px black;
+    border-bottom: solid 2px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,7 +362,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0;
-    border-bottom: solid 4px black; 
+    border-bottom: solid 2px black; 
 }
 
 #pre3 {
@@ -570,7 +570,7 @@ i {
 
 #gema {
     width: 150px;
-    height: 250px;
+    height: 70px;
     border-radius: 0 0 10em 10em;
     background-color: rgb(188, 153, 253);
     border-top: 2px black solid;
@@ -585,6 +585,11 @@ i {
 #bi {
     margin-top: 3em;
 }
+
+#contatos{
+    height: auto;
+}
+
 }
 
 

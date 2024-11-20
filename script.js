@@ -10,8 +10,9 @@ var foot3 = document.getElementById('foot3');
 var foot4 = document.getElementById('foot4');
 
 
+
 function tohome() {
-    foot1.style.display = 'block';
+    foot1.style.display = 'flex';
     foot2.style.display = 'none';
     foot3.style.display = 'none';
     foot4.style.display = 'none';
@@ -63,6 +64,80 @@ function tocontact() {
     contact.style.color = 'purple'
 }
 
+
+
+
+var andar = 0;
+let vir = document.getElementById('voltar');
+let ir = document.getElementById('avancar');
+
+let texto = document.getElementById('moltext');
+let atras = document.getElementById('moldown');
+
+proximo = () => {
+    andar++ ; 
+
+    if (andar == 1) {
+        cenario2(); 
+    }
+
+    if (andar == 2) {
+        cenario3(); 
+    }
+
+    if (andar >= 3) {
+        andar = 0; 
+        cenario1();
+    }
+};
+
+
+voltar = () => { 
+    andar--;
+
+    if (andar == 0) {
+        cenario1(); 
+    }
+
+    if (andar == 1) {
+        cenario2(); 
+    }
+
+    if (andar <= -1) {
+        andar = 2; 
+        cenario3();
+    }
+};
+
+cenario1 = () => { 
+                   texto.textContent = 'BitBlog' ; 
+                   texto.style.left = '100px';
+                   atras.src = 'bitblog_home.png'; 
+                 };
+
+cenario2 = () => { 
+                  texto.textContent = 'Psicoajuda' ; 
+                  texto.style.left = '75px';
+                  atras.src = 'psicoajuda_home.png';
+               
+                 };
+
+cenario3 = () => { 
+                  texto.textContent = 'MoonHead' ; 
+                  texto.style.left = '75px';
+                  atras.src = 'moonhead_home.png';
+                };
+
+
+ir.addEventListener('click',proximo);
+vir.addEventListener('click',voltar);
+
+
+
+home.addEventListener('click',tohome);
+projects.addEventListener('click',toprojects);
+more.addEventListener('click',tomore);
+contact.addEventListener('click',tocontact);
 
 
 

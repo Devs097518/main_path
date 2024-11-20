@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
+
 @font-face {
     font-family: 'minecraft';
     src: url('fonts/Minecraftia-Regular.woff') format('woff')
@@ -15,13 +20,8 @@
 
 @font-face{
     font-family: 'nina';
-    src: url('fonts/Lotion-Regular.woff2') format('woff');
+    src: url('fonts/Lotion-Regular.woff2') format('woff2');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
 
 
 @media (max-width: 1400px){
@@ -281,7 +281,7 @@ body {
     justify-content: space-between;
 }
 
-#bu1{
+.bu1{
     padding: 1em;
     background-color: rgb(255, 255, 255);
     border-radius: 55px;
@@ -622,7 +622,7 @@ body {
 }
 
 #head {
-    border-left: black 2px solid;
+   
     border-top: black 2px solid;
     padding: 2em;
     font-family: 'chique';
@@ -651,7 +651,7 @@ body {
 #body {
     padding: 2em;
     grid-column: 4/5;
-    border-left: black 2px solid;
+    border-left: 0;
     border-top: black 2px solid;
     border-right: black 2px solid;
 
@@ -714,7 +714,9 @@ body {
 }
 
 .barrinhas {
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 3px 3px 1px rgb(255, 255, 255);
+    font-weight: 800;
+    
 }
 
 
@@ -829,7 +831,7 @@ body {
 #moltext{
     position: absolute;
     top: 65px;
-    left: 95px;
+    left: 100px;
     font-size: 3em;
     font-family: 'chique';
     color: rgb(255, 255, 255);
@@ -850,7 +852,7 @@ body {
     margin-bottom: 0;
 }
 
-#bu1{
+.bu1{
     padding: 1em;
     background-color: rgb(255, 255, 255);
     border-radius: 55px;
@@ -877,6 +879,8 @@ body {
 
 #pretitulo {
     font-family: 'minecraft';
+    
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.253);
     font-size: 2em;
     margin: 0;
 }
@@ -886,10 +890,12 @@ body {
     max-width: 340px;
     font-size: 15px;
 
-    font-family: 'nina'; 
-    font-weight: 500;
+    font-family: 'nina';
+    font-weight: 600;
     color: rgb(0, 0, 0);
+    
     font-style: normal;
+
 }
 
 #imgcenarios {
@@ -1071,6 +1077,11 @@ body {
 }
 
 #projetos1 {
+    font-family: 'nina';
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    
+    text-shadow: 3px 3px 0 rgb(255, 255, 255);
     width: 400px;
     height: auto;
     padding-left: 3em;
@@ -1082,6 +1093,10 @@ body {
 
 #projetos01 {
     height: auto;
+    font-family: 'nina';
+    font-weight: 600;
+    
+    text-shadow: 3px 3px 0 rgb(255, 255, 255);
     padding-left: 3em;
     padding-right: 3em;
     float: center;

@@ -171,7 +171,7 @@ body {
     padding: 2em;
     
     border-radius: 0 0 15px 15px;
-    background-image: url('textura7.jpg');
+    background-image: url('textura14.jpg');
     background-size: auto;
     background-repeat: repeat;
 }
@@ -204,7 +204,7 @@ body {
 
 
 .faixas {
-    background-image: url(textura5.jpeg);
+    background-image: url(textura11.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Quicksand", sans-serif;
@@ -303,13 +303,14 @@ body {
     display: flex;
     margin: 10px;
     padding: 25px;
-
+    text-shadow: 3px 3px 0 rgba(102, 102, 102, 0.226);
 }
 
 #pretitulo {
     font-family: 'minecraft';
     font-size: 2em;
     margin: 0;
+    color: aliceblue;
 }
 
 #pretextos {
@@ -319,22 +320,19 @@ body {
 
     font-family: 'nina'; 
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-style: normal;
 }
 
 #imgcenarios {
     width: 180px;
     height: auto;
-    box-shadow: 5px 5px 1px black;
     display: flex;
 }
 
 #linguagens {
     width: 270px;
 }
-
-#fling {}
 
 .imglinguagens {
     width: 50px;
@@ -344,7 +342,7 @@ body {
 }
 
 #pre1 {
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px rgb(187, 187, 187);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,7 +360,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0;
-    border-bottom: solid 2px black; 
+    border-bottom: solid 2px rgb(187, 187, 187); 
 }
 
 #pre3 {
@@ -502,7 +500,10 @@ body {
 }
 
 #projetos1 {
-    
+    font-family: 'nina';
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(255, 255, 255);
     
     
     /* border-left: black 2px double; */
@@ -511,6 +512,19 @@ body {
     margin: 0 1em 1em 1em;
     text-align: left;
     text-align: center;
+}
+
+#projetos01 {
+    height: auto;
+    font-family: 'nina';
+    font-weight: 600;
+    
+    text-shadow: 3px 3px 0 rgb(255, 255, 255);
+    padding-left: 3em;
+    padding-right: 3em;
+    float: center;
+    text-align: center;
+    font-size: 15px;
 }
 
 .setas {
@@ -740,7 +754,7 @@ body {
     padding: 2em;
     grid-column: 1/5;
     border-radius: 0 0 15px 15px;
-    background-image: url('textura7.jpg');
+    background-image: url('textura14.jpg');
     background-size: auto;
     background-repeat: repeat;
 }
@@ -775,7 +789,7 @@ body {
 
 
 .faixas {
-    background-image: url(textura5.jpeg);
+    background-image: url(textura11.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Quicksand", sans-serif;
@@ -879,8 +893,8 @@ body {
 
 #pretitulo {
     font-family: 'minecraft';
-    
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.253);
+    color: aliceblue;
+    text-shadow: 3px 3px 0 rgb(0, 0, 0);
     font-size: 2em;
     margin: 0;
 }
@@ -891,17 +905,17 @@ body {
     font-size: 15px;
 
     font-family: 'nina';
-    font-weight: 600;
-    color: rgb(0, 0, 0);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
     
     font-style: normal;
 
 }
 
 #imgcenarios {
-    width: 180px;
+    width: 150px;
     height: auto;
-    box-shadow: 5px 5px 1px black;
     display: flex;
 }
 
@@ -919,7 +933,7 @@ body {
 }
 
 #pre1 {
-    border-right: solid 4px black;
+    border-right: solid 1px rgb(255, 255, 255);
     border-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -940,7 +954,7 @@ body {
 }
 
 #pre3 {
-    border-left: solid 4px black;
+    border-left: solid 1px rgb(255, 255, 255);
     border-bottom: 0;
     margin: 0;
     display: flex;
@@ -1080,15 +1094,15 @@ body {
     font-family: 'nina';
     font-weight: 600;
     color: rgb(0, 0, 0);
-    
     text-shadow: 3px 3px 0 rgb(255, 255, 255);
+
     width: 400px;
     height: auto;
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 2em;
     float: left;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 #projetos01 {

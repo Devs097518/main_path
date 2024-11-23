@@ -637,15 +637,19 @@ body {
 
 #head {
    
+    border-left: 0;
+
+
     border-top: black 2px solid;
+    border-right: black 2px solid;
     padding: 2em;
     font-family: 'chique';
     font-size: 1.5em;
-    grid-column: 1/4;
+    grid-column: 4/5;
     grid-row-start: 1;
     grid-row-end: 2;
     padding: 1em;
-    border-radius: 15px 0 0 0;
+    border-radius: 0 15px 0 0;
 
 }
 
@@ -664,15 +668,16 @@ body {
 
 #body {
     padding: 2em;
-    grid-column: 4/5;
-    border-left: 0;
+    grid-column: 1/4;
     border-top: black 2px solid;
-    border-right: black 2px solid;
+    
+   
 
     background-image: url(florroxa.jpg);
     background-size: cover;
 
-    border-radius: 0 15px 0 0;
+    border-radius: 15px 0 0 0;
+    
 }
 
 #titulo {
@@ -818,6 +823,7 @@ body {
     flex-direction: column;
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 
 
@@ -1033,7 +1039,7 @@ body {
     display: flex;
     /* align-items: center; */
     flex-direction: column;
-    padding: 0.5em;
+    padding:0 0.5em 0.5em 0.5em;
     float: left;
     width: 300px;
 
@@ -1098,7 +1104,7 @@ body {
 
     width: 400px;
     height: auto;
-    padding-left: 3em;
+    padding-left: 4em;
     padding-right: 3em;
     padding-top: 2em;
     float: left;

@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
 
 @font-face {
     font-family: 'minecraft';
-    src: url('fonts/Minecraftia-Regular.woff') format('woff')
+    src: url('fonts/Minecraftia-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -13,1193 +11,985 @@
     src: url('fonts/chabul.woff') format('woff');
 }
 
-@font-face{
-    font-family: 'basicona' ;
+@font-face {
+    font-family: 'basicona';
     src: url('fonts/NORMT___.woff') format('woff');
 }
 
-@font-face{
+@font-face {
     font-family: 'nina';
     src: url('fonts/Lotion-Regular.woff2') format('woff2');
 }
 
 
-@media (max-width: 1400px){
-    
-body {
-    margin: 0;
-    font-family: 'minecraft';
-    background-color: rgb(93, 114, 90);
-
-    display: flex;
-    justify-content: center;
-     
-    align-items: center;
+@media (max-width: 1400px) {
+
+    body {
+        margin: 0;
+        font-family: 'minecraft';
+        background-color: rgb(93, 114, 90);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #all {
+        border: black 2px solid;
+        padding: 2em;
+        width: 80%;
+        margin: 20px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+    }
+
+    #head {
+        border-left: black 2px solid;
+        border-top: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        font-family: 'chique';
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    #cimatexto {
+        text-align: center;
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    #ilustration {
+        margin: 1em;
+        width: 188.5px;
+        float: left;
+        height: auto;
+    }
+
+    #body {
+        padding: 2em;
+        border-left: black 2px solid;
+        border-top: black 2px solid;
+        border-right: black 2px solid;
+        background-image: url(florroxa.jpg);
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #titulo {
+        color: rgb(97, 6, 150);
+        font-family: 'chique';
+        font-size: 55px;
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+    }
+
+    #euimg {
+        width: 250px;
+        height: auto;
+        float: center;
+        border-radius: 2em;
+        box-shadow: 5px 5px 1px black;
+        margin: 1em;
+    }
+
+    #star_img {
+        width: 80px;
+        height: auto;
+        float: right;
+    }
+
+    #arvore {
+        width: 280px;
+        height: auto;
+    }
+
+    #textooi {
+        color: rgb(0, 0, 0);
+        font-family: 'chique';
+        font-size: 4em;
+        text-align: center;
+    }
+
+    #barra {
+        border: black 2px solid;
+        padding: 2em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        background-image: url(textura1.jpg);
+    }
+
+    .barrinhas {
+        text-shadow: 2px 2px 2px white;
+        color: black;
+    }
+
+
+    #foot4 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        border-radius: 0 0 15px 15px;
+    }
+
+
+    #foot3 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        border-radius: 0 0 15px 15px;
+        background-image: url('textura14.jpg');
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+
+    #foot2 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #foot1 {
+        align-items: center;
+        flex-direction: column;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        display: flex;
+        padding: 2em;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .faixas {
+        background-image: url(textura11.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        flex-direction: column;
+    }
+
+    #visor {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+
+    #view {
+        position: relative;
+        width: 300px;
+        height: 230px;
+    }
+
+    #molup {
+        position: absolute;
+        width: 300px;
+        height: auto;
+    }
+
+    #moldown {
+        filter: blur(1px);
+        position: absolute;
+        width: 260px;
+        height: auto;
+        top: 50px;
+        left: 21px;
+    }
+
+    #moltext {
+        position: absolute;
+        top: 65px;
+        left: 95px;
+        font-size: 3em;
+        font-family: 'chique';
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px black;
+    }
+
+    #directions {
+        margin-top: 2em;
+        width: 270px;
+        height: 63px;
+        border-radius: 55px;
+        background-image: url('chiado.gif');
+        background-repeat: repeat;
+        display: flex;
+        margin-bottom: 2em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bu1 {
+        padding: 1em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 55px;
+        border: 1px solid black;
+    }
+
+
+    #preferidos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pre {
+        width: 260px;
+        display: flex;
+        margin: 10px;
+        padding: 25px;
+        text-shadow: 3px 3px 0 rgba(102, 102, 102, 0.226);
+    }
+
+    #pretitulo {
+        font-family: 'minecraft';
+        font-size: 2em;
+        margin: 0;
+        color: aliceblue;
+    }
+
+    #pretextos {
+        padding: 0;
+        max-width: 340px;
+        font-size: 15px;
+        font-family: 'nina';
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        font-style: normal;
+    }
+
+    #imgcenarios {
+        width: 180px;
+        height: auto;
+        display: flex;
+    }
+
+    #linguagens {
+        width: 270px;
+    }
+
+    .imglinguagens {
+        width: 50px;
+        height: auto;
+        padding: 5px;
+        align-items: center;
+    }
+
+    #pre1 {
+        border-bottom: solid 2px rgb(187, 187, 187);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    #pre2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        border-bottom: solid 2px rgb(187, 187, 187);
+    }
+
+    #pre3 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #folhetos {
+        width: auto;
+        height: 150px;
+    }
+
+    #description {
+        height: 197px;
+        width: 398px;
+        background-color: aliceblue;
+    }
+
+    .xuxa:focus .xuxa:active {
+        font-size: 1.8em;
+        border: 0;
+        outline: none;
+        box-shadow: none;
+    }
+
+    #presilha {
+        width: 170px;
+        height: auto;
+        float: left;
+        top: 21em;
+        display: none;
+    }
+
+    #osgifs {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+        float: left;
+        width: 300px;
+    }
+
+    #ogif1 {
+        width: 150px;
+        height: auto;
+        float: right;
+        border-radius: 50em;
+        margin-left: 0px;
+    }
+
+    #ogif2 {
+        width: 180px;
+        height: auto;
+        float: right;
+        border-radius: 50em;
+        margin: 4px 0 4px 75px;
+    }
+
+    #ogif3 {
+        width: 170px;
+        height: auto;
+        float: right;
+        border-radius: 50em;
+        margin-left: 25px;
+    }
+
+    .animados {
+        border: 1px solid black;
+        box-shadow: 4px 4px 1px black;
+    }
+
+    .pagina {
+        width: 300px;
+        height: auto;
+        float: right;
+    }
+
+    #projetos {
+        width: 300px;
+        height: auto;
+        float: right;
+        padding-left: 3em;
+        padding-right: 3em;
+        border-left: black 2px solid;
+    }
+
+    #projetos1 {
+        font-family: 'nina';
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+        float: left;
+        font-size: 15px;
+        margin: 0 1em 1em 1em;
+        text-align: left;
+        text-align: center;
+    }
+
+    #projetos01 {
+        height: auto;
+        font-family: 'nina';
+        font-weight: 600;
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+        float: center;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .setas {
+        width: 120px;
+        height: auto;
+        float: right;
+    }
+
+    #next {
+        position: fixed;
+        top: 59em;
+        left: 95em;
+    }
+
+    #into {
+        position: fixed;
+        top: 59em;
+        left: 84em;
+    }
+    i {
+        font-size: 2em;
+    }
+    #bandeija {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #ovo {
+        width: 150px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #clara {
+        width: 150px;
+        height: 250px;
+        border-radius: 10em 10em 0 0;
+        background-color: rgb(230, 230, 230);
+        border: 2px black solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gema {
+        width: 150px;
+        height: 70px;
+        border-radius: 0 0 10em 10em;
+        background-color: rgb(188, 153, 253);
+        border-top: 2px black solid;
+        border-right: 3px black solid;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bi {
+        margin-top: 3em;
+    }
+    #contatos {
+        height: auto;
+    }
+}
+
+
+@media (min-width: 500px) {
+
+    body {
+        margin: 0;
+        font-family: 'minecraft';
+        background-color: rgb(93, 114, 90);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #all {
+        border: black 2px solid;
+        padding: 2em;
+        width: 1270px;
+        height: 740px;
+        margin: 5px;
+        font-size: 12px;
+        display: grid;
+        grid-template-rows: 300px 70px auto;
+        text-align: justify;
+        background-color: rgb(255, 255, 255);
+        border-radius: 25px;
+    }
+
+    #head {
+        border-left: 0;
+        border-top: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        font-family: 'chique';
+        font-size: 1.5em;
+        grid-column: 4/5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 1em;
+        border-radius: 0 15px 0 0;
+    }
+
+    #cimatexto {
+        text-align: center;
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    #ilustration {
+        margin: 1em;
+        width: 188.5px;
+        float: left;
+        height: auto;
+    }
+
+    #body {
+        padding: 2em;
+        grid-column: 1/4;
+        border-top: black 2px solid;
+        background-image: url(florroxa.jpg);
+        background-size: cover;
+        border-radius: 15px 0 0 0;
+    }
+
+    #titulo {
+        color: rgb(97, 6, 150);
+        font-family: 'chique';
+        font-size: 100px;
+        margin-top: 1em;
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+    }
+
+    #euimg {
+        width: 270px;
+        height: auto;
+        border-radius: 2em;
+        box-shadow: 5px 5px 1px black;
+    }
+
+    #star_img {
+        width: 120px;
+        height: auto;
+        float: right;
+    }
+
+    #arvore {
+        width: 300px;
+        height: auto;
+        float: right;
+    }
+
+    #textooi {
+        color: rgb(0, 0, 0);
+        font-family: 'chique';
+        font-size: 4em;
+        margin-top: 0;
+    }
+
+    #barra {
+        border: black 2px solid;
+        padding: 2em;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        background-image: url(textura1.jpg);
+    }
+
+    .barrinhas {
+        text-shadow: 3px 3px 1px rgb(255, 255, 255);
+        font-weight: 800;
+    }
+
+
+    #foot4 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        grid-column: 1/5;
+        border-radius: 0 0 15px 15px;
+    }
+
+
+    #foot3 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        grid-column: 1/5;
+        border-radius: 0 0 15px 15px;
+        background-image: url('textura14.jpg');
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+
+    #foot2 {
+        display: none;
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        grid-column: 1/5;
+        border-radius: 0 0 15px 15px;
+        height: 320px;
+    }
+
+    #foot1 {
+        border-bottom: black 2px solid;
+        border-left: black 2px solid;
+        border-right: black 2px solid;
+        padding: 2em;
+        grid-column: 1/5;
+        border-radius: 0 0 15px 15px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    .faixas {
+        background-image: url(textura11.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        flex-direction: row;
+    }
+
+
+    #visor {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+
+    #view {
+        position: relative;
+        width: 300px;
+        height: 230px;
+    }
+
+    #molup {
+        position: absolute;
+        width: 300px;
+        height: auto;
+    }
+
+    #moldown {
+        filter: blur(1px);
+        position: absolute;
+        width: 260px;
+        height: auto;
+        top: 50px;
+        left: 21px;
+    }
+
+    #moltext {
+        position: absolute;
+        top: 65px;
+        left: 100px;
+        font-size: 3em;
+        font-family: 'chique';
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 2px black;
+    }
+
+    #directions {
+        margin-top: 2em;
+        width: 270px;
+        height: 63px;
+        border-radius: 55px;
+        background-image: url('chiado.gif');
+        background-repeat: repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .bu1 {
+        padding: 1em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 55px;
+        border: 1px solid black;
+    }
+
+
+    #preferidos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .pre {
+        height: 280px;
+        width: 350px;
+        display: flex;
+        margin: 10px;
+        padding: 12px;
+
+    }
+
+    #pretitulo {
+        font-family: 'minecraft';
+        color: aliceblue;
+        text-shadow: 3px 3px 0 rgb(0, 0, 0);
+        font-size: 2em;
+        margin: 0;
+    }
+
+    #pretextos {
+        padding: 0;
+        max-width: 340px;
+        font-size: 15px;
+        font-family: 'nina';
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0 rgb(0, 0, 0);
+        font-style: normal;
+    }
+
+    #imgcenarios {
+        width: 150px;
+        height: auto;
+        display: flex;
+    }
+
+    #linguagens {
+        width: 270px;
+    }
+
+    .imglinguagens {
+        width: 50px;
+        height: auto;
+        padding: 5px;
+        align-items: center;
+    }
+
+    #pre1 {
+        border-right: solid 1px rgb(255, 255, 255);
+        border-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #pre2 {
+
+        border-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #pre3 {
+        border-left: solid 1px rgb(255, 255, 255);
+        border-bottom: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #folhetos {
+        width: auto;
+        height: 150px;
+    }
+
+
+    #description {
+        height: 197px;
+        width: 398px;
+        background-color: aliceblue;
+    }
+
+    .xuxa:focus .xuxa:active {
+        font-size: 1.8em;
+        border: 0;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+    #presilha {
+        width: 170px;
+        height: auto;
+        position: absolute;
+        right: 80%;
+        top: 21em;
+    }
+
+
+    #osgifs {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5em 0.5em 0.5em;
+        float: left;
+        width: 300px;
+
+    }
+
+    #ogif1 {
+        width: 150px;
+        height: auto;
+        float: right;
+        border-radius: 50em;
+        margin-left: 50px;
+    }
+
+    #ogif2 {
+        width: 180px;
+        height: auto;
+
+        float: right;
+        border-radius: 50em;
+        margin: 4px 0 4px 100px;
+    }
+
+    #ogif3 {
+        width: 170px;
+        height: auto;
+        float: right;
+        border-radius: 50em;
+        margin-left: 50px;
+    }
+
+
+    .animados {
+        border: 1px solid black;
+        box-shadow: 4px 4px 1px black;
+    }
+
+
+
+    .pagina {
+        width: 300px;
+        height: auto;
+        float: right;
+    }
+
+
+
+    #projetos {
+        width: 300px;
+        height: auto;
+        float: right;
+        padding-left: 3em;
+        padding-right: 3em;
+        border-left: black 2px solid;
+
+    }
+
+    #projetos1 {
+        font-family: 'nina';
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+
+        width: 400px;
+        height: auto;
+        padding-left: 4em;
+        padding-right: 3em;
+        padding-top: 2em;
+        float: left;
+        font-size: 17px;
+    }
+
+    #projetos01 {
+        height: auto;
+        font-family: 'nina';
+        font-weight: 600;
+
+        text-shadow: 3px 3px 0 rgb(255, 255, 255);
+        padding-left: 3em;
+        padding-right: 3em;
+        float: center;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #introbox {
+        width: 400px;
+    }
+
+    .setas {
+        width: 120px;
+        height: auto;
+        float: right;
+    }
+
+    #next {
+        position: fixed;
+        top: 59em;
+        left: 95em;
+    }
+
+    #into {
+        position: fixed;
+        top: 59em;
+        left: 84em;
+    }
+    i {
+        font-size: 2em;
+    }
+    #bandeija {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #ovo {
+        width: 150px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #clara {
+        width: 150px;
+        height: 250px;
+        border-radius: 10em 10em 0 0;
+        background-color: rgb(230, 230, 230);
+        border: 2px black solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #gema {
+        width: 150px;
+        border-radius: 0 0 10em 10em;
+        background-color: rgb(188, 153, 253);
+        border-top: 2px black solid;
+        border-right: 3px black solid;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bi {
+        margin-top: 3em;
+    }
 }
-
-#all {
-    border: black 2px solid;
-    padding: 2em;
-    width: 80%;
-    
-    margin: 20px;
-    font-size: 12px;
-
-    display: flex;
-    flex-direction: column;
-  
-    text-align: justify;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-}
-
-#head {
-    border-left: black 2px solid;
-    border-top: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    font-family: 'chique';
-    font-size: 1.5em;
-    
-    padding: 1em;
-
-}
-
-#cimatexto {
-    text-align: center;
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-#ilustration {
-    margin: 1em;
-    width: 188.5px;
-    float: left;
-    height: auto;
-}
-
-#body {
-    padding: 2em;
-   
-    border-left: black 2px solid;
-    border-top: black 2px solid;
-    border-right: black 2px solid;
-
-    background-image: url(florroxa.jpg);
-    background-size: cover;
-
-    border-radius: 15px 15px 0 0;
-}
-
-#titulo {
-    color: rgb(97, 6, 150);
-    font-family: 'chique';
-    font-size: 55px;
-    
-    
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-}
-
-#euimg {
-    width: 250px;
-    height: auto;
-    float: center;
-    border-radius: 2em;
-    box-shadow: 5px 5px 1px black;
-    margin: 1em;
-    /* outline: 2px solid black;
-    outline-offset: -10px; */
-    /* Adjust the offset as needed */
-}
-
-#star_img {
-    width: 80px;
-    height: auto;
-    float: right;
-}
-
-#arvore {
-    width: 280px;
-    height: auto;
-    /* margin-left: 3em; */
-
-}
-
-#textooi {
-    color: rgb(0, 0, 0);
-    font-family: 'chique';
-    font-size: 4em;
-    text-align: center;
-
-}
-
-#barra {
-    border: black 2px solid;
-    padding: 2em;
-    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    background-image: url(textura1.jpg);
-}
-
-.barrinhas {
-    text-shadow: 2px 2px 2px white;
-    color: black;
-}
-
-
-#foot4 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    
-    border-radius: 0 0 15px 15px;
-}
-
-
-#foot3 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    
-    border-radius: 0 0 15px 15px;
-    background-image: url('textura14.jpg');
-    background-size: auto;
-    background-repeat: repeat;
-}
-
-
-#foot2 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    
-    border-radius: 0 0 15px 15px;
-
-}
-
-#foot1 {
-
-    align-items: center;
-    flex-direction: column;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    display: flex;
-    
-    padding: 2em;
-    border-radius: 0 0 15px 15px;
-
-}
-
-
-.faixas {
-    background-image: url(textura11.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    flex-direction: column;
-}
-
-
-
-#caixona {
-    height: 335px;
-    width: 404px;
-    background-image: url('pagina.png');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    float: left;
-
-}
-
-#visor{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-
-
-#view{
-    position: relative;
-    width: 300px;
-    height: 230px;
-}
-
-#molup{
-    position: absolute;
-    width: 300px;
-    height: auto;
-}
-#moldown{
-    filter: blur(1px);
-    position: absolute;
-    width: 260px;
-    height: auto;
-
-    top: 50px;
-    left: 21px;
-}
-
-#moltext{
-    position: absolute;
-    top: 65px;
-    left: 95px;
-    font-size: 3em;
-    font-family: 'chique';
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px black;
-}
-
-#directions{
-    margin-top: 2em;
-    width: 270px;
-    height: 63px;
-    border-radius: 55px;
-    background-image: url('chiado.gif');
-    background-repeat: repeat;
-    
-    display: flex;
-    margin-bottom: 2em;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.bu1{
-    padding: 1em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 55px;
-    border: 1px solid black;
-}
-
-
-
-#preferidos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.pre {
-    width: 260px;
-    display: flex;
-    margin: 10px;
-    padding: 25px;
-    text-shadow: 3px 3px 0 rgba(102, 102, 102, 0.226);
-}
-
-#pretitulo {
-    font-family: 'minecraft';
-    font-size: 2em;
-    margin: 0;
-    color: aliceblue;
-}
-
-#pretextos {
-    padding: 0;
-    max-width: 340px;
-    font-size: 15px;
-
-    font-family: 'nina'; 
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    font-style: normal;
-}
-
-#imgcenarios {
-    width: 180px;
-    height: auto;
-    display: flex;
-}
-
-#linguagens {
-    width: 270px;
-}
-
-.imglinguagens {
-    width: 50px;
-    height: auto;
-    padding: 5px;
-    align-items: center;
-}
-
-#pre1 {
-    border-bottom: solid 2px rgb(187, 187, 187);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    /* align-items: center; */
-    margin: 0;
-    padding-top: 0;
-}
-
-#pre2 {
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    border-bottom: solid 2px rgb(187, 187, 187); 
-}
-
-#pre3 {
-    
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#folhetos{
-    width: auto;
-    height: 150px;
-}
-
-
-
-#projetonome {
-    padding: 0 2em;
-}
-
-
-
-#figura {
-    height: 100px;
-    width: 398px;
-    background-color: rgb(196, 196, 196);
-    margin-top: 2.6em;
-
-    background-image: url(bitblog_home.png);
-    background-size: cover;
-    border: 1px black solid;
-}
-
-#figuratexto {
-    padding: 0 2em;
-    font-size: 10px;
-    font-size: 15px;
-}
-
-#description {
-    height: 197px;
-    width: 398px;
-    background-color: aliceblue;
-}
-
-#staygo {
-    display: flex;
-    justify-content: center;
-}
-
-.joystick {
-    width: 30px;
-    height: 30px;
-    border: 0;
-}
-
-.xuxa:focus .xuxa:active {
-    font-size: 1.8em;
-    border: 0;
-    outline: none;
-    box-shadow: none;
-}
-
-
-#presilha {
-    width: 170px;
-    height: auto;
-    float: left;
-    top: 21em;
-    display: none;
-}
-
-
-#osgifs {
-
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    padding: 0.5em;
-    float: left;
-    width: 300px;
-
-}
-
-#ogif1 {
-    width: 150px;
-    height: auto;
-    float: right;
-    border-radius: 50em;
-    margin-left: 0px;
-}
-
-#ogif2 {
-    width: 180px;
-    height: auto;
-
-    float: right;
-    border-radius: 50em;
-    margin: 4px 0 4px 75px;
-}
-
-#ogif3 {
-    width: 170px;
-    height: auto;
-    float: right;
-    border-radius: 50em;
-    margin-left: 25px;
-}
-
-
-.animados {
-    border: 1px solid black;
-    box-shadow: 4px 4px 1px black;
-}
-
-
-
-.pagina {
-    width: 300px;
-    height: auto;
-    float: right;
-}
-
-
-
-#projetos {
-    width: 300px;
-    height: auto;
-    float: right;
-    padding-left: 3em;
-    padding-right: 3em;
-    border-left: black 2px solid;
-
-}
-
-#projetos1 {
-    font-family: 'nina';
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-    
-    
-    /* border-left: black 2px double; */
-    float: left;
-    font-size: 15px;
-    margin: 0 1em 1em 1em;
-    text-align: left;
-    text-align: center;
-}
-
-#projetos01 {
-    height: auto;
-    font-family: 'nina';
-    font-weight: 600;
-    
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-    float: center;
-    text-align: center;
-    font-size: 15px;
-}
-
-.setas {
-    width: 120px;
-    height: auto;
-    float: right;
-}
-
-#next {
-    position: fixed;
-    top: 59em;
-    left: 95em;
-}
-
-#into {
-    position: fixed;
-    top: 59em;
-    left: 84em;
-}
-
-
-i {
-    font-size: 2em;
-}
-
-
-
-#bandeija {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-#ovo {
-    width: 150px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#clara {
-    width: 150px;
-    height: 250px;
-    border-radius: 10em 10em 0 0;
-    background-color: rgb(230, 230, 230);
-    border: 2px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#gema {
-    width: 150px;
-    height: 70px;
-    border-radius: 0 0 10em 10em;
-    background-color: rgb(188, 153, 253);
-    border-top: 2px black solid;
-    border-right: 3px black solid;
-    margin-bottom: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bi {
-    margin-top: 3em;
-}
-
-#contatos{
-    height: auto;
-}
-
-}
-
-
-@media (min-width: 500px){
-    
-body {
-    margin: 0;
-    font-family: 'minecraft';
-    background-color: rgb(93, 114, 90);
-
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-}
-
-#all {
-    border: black 2px solid;
-    padding: 2em;
-    width: 1270px;
-    height: 740px;
-    margin: 5px;
-    font-size: 12px;
-
-    display: grid;
-    grid-template-rows: 300px 70px auto;
-    text-align: justify;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    
-}
-
-#head {
-   
-    border-left: 0;
-
-
-    border-top: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    font-family: 'chique';
-    font-size: 1.5em;
-    grid-column: 4/5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding: 1em;
-    border-radius: 0 15px 0 0;
-
-}
-
-#cimatexto {
-    text-align: center;
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-#ilustration {
-    margin: 1em;
-    width: 188.5px;
-    float: left;
-    height: auto;
-}
-
-#body {
-    padding: 2em;
-    grid-column: 1/4;
-    border-top: black 2px solid;
-    
-   
-
-    background-image: url(florroxa.jpg);
-    background-size: cover;
-
-    border-radius: 15px 0 0 0;
-    
-}
-
-#titulo {
-    color: rgb(97, 6, 150);
-    font-family: 'chique';
-    font-size: 100px;
-    margin-top: 1em;
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-}
-
-#euimg {
-    width: 270px;
-    height: auto;
-    
-    border-radius: 2em;
-    box-shadow: 5px 5px 1px black;
-    /* outline: 2px solid black;
-    outline-offset: -10px; */
-    /* Adjust the offset as needed */
-}
-
-#star_img {
-    width: 120px;
-    height: auto;
-    float: right;
-}
-
-#arvore {
-    width: 300px;
-    height: auto;
-    float: right;
-}
-
-#textooi {
-    /* margin-left: 7.5em; */
-    color: rgb(0, 0, 0);
-    font-family: 'chique';
-    font-size: 4em;
-    margin-top: 0;
-}
-
-#barra {
-    border: black 2px solid;
-    padding: 2em;
-    grid-column: 1/5;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    background-image: url(textura1.jpg);
-}
-
-.barrinhas {
-    text-shadow: 3px 3px 1px rgb(255, 255, 255);
-    font-weight: 800;
-    
-}
-
-
-#foot4 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    
-    padding: 2em;
-    grid-column: 1/5;
-    border-radius: 0 0 15px 15px;
-}
-
-
-#foot3 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    grid-column: 1/5;
-    border-radius: 0 0 15px 15px;
-    background-image: url('textura14.jpg');
-    background-size: auto;
-    background-repeat: repeat;
-}
-
-
-#foot2 {
-    display: none;
-    border-bottom: black 2px solid;
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    
-    padding: 2em;
-    grid-column: 1/5;
-    border-radius: 0 0 15px 15px;
-    height: 320px;
-    
-}
-
-#foot1 {
-
-   
-    border-bottom: black 2px solid;
-    
-    border-left: black 2px solid;
-    border-right: black 2px solid;
-    padding: 2em;
-    
-    grid-column: 1/5;
-    border-radius: 0 0 15px 15px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-.faixas {
-    background-image: url(textura11.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    flex-direction: row;
-}
-
-
-
-#caixona {
-    height: 335px;
-    width: 404px;
-    background-image: url('pagina.png');
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    float: left;
-
-}
-
-#visor{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
-
-
-#view{
-    position: relative;
-    width: 300px;
-    height: 230px;
-}
-
-#molup{
-    position: absolute;
-    width: 300px;
-    height: auto;
-}
-#moldown{
-    filter: blur(1px);
-    position: absolute;
-    width: 260px;
-    height: auto;
-
-    top: 50px;
-    left: 21px;
-}
-
-#moltext{
-    position: absolute;
-    top: 65px;
-    left: 100px;
-    font-size: 3em;
-    font-family: 'chique';
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px black;
-}
-
-#directions{
-    margin-top: 2em;
-    width: 270px;
-    height: 63px;
-    border-radius: 55px;
-    background-image: url('chiado.gif');
-    background-repeat: repeat;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.bu1{
-    padding: 1em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 55px;
-    border: 1px solid black;
-}
-
-
-
-#preferidos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.pre {
-    height: 280px;
-    width: 350px;
-    display: flex;
-    margin: 10px;
-    padding: 12px;
-
-}
-
-#pretitulo {
-    font-family: 'minecraft';
-    color: aliceblue;
-    text-shadow: 3px 3px 0 rgb(0, 0, 0);
-    font-size: 2em;
-    margin: 0;
-}
-
-#pretextos {
-    padding: 0;
-    max-width: 340px;
-    font-size: 15px;
-
-    font-family: 'nina';
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 0 rgb(0, 0, 0);
-    
-    font-style: normal;
-
-}
-
-#imgcenarios {
-    width: 150px;
-    height: auto;
-    display: flex;
-}
-
-#linguagens {
-    width: 270px;
-}
-
-#fling {}
-
-.imglinguagens {
-    width: 50px;
-    height: auto;
-    padding: 5px;
-    align-items: center;
-}
-
-#pre1 {
-    border-right: solid 1px rgb(255, 255, 255);
-    border-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    /* align-items: center; */
-    margin: 0;
-}
-
-#pre2 {
-    
-    border-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-}
-
-#pre3 {
-    border-left: solid 1px rgb(255, 255, 255);
-    border-bottom: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#folhetos{
-    width: auto;
-    height: 150px;
-}
-
-
-
-#projetonome {
-    padding: 0 2em;
-}
-
-
-
-#figura {
-    height: 100px;
-    width: 398px;
-    background-color: rgb(196, 196, 196);
-    margin-top: 2.6em;
-
-    background-image: url(bitblog_home.png);
-    background-size: cover;
-    border: 1px black solid;
-}
-
-#figuratexto {
-    padding: 0 2em;
-    font-size: 10px;
-    font-size: 15px;
-}
-
-#description {
-    height: 197px;
-    width: 398px;
-    background-color: aliceblue;
-}
-
-#staygo {
-    display: flex;
-    justify-content: center;
-}
-
-.joystick {
-    width: 30px;
-    height: 30px;
-    border: 0;
-}
-
-.xuxa:focus .xuxa:active {
-    font-size: 1.8em;
-    border: 0;
-    outline: none;
-    box-shadow: none;
-}
-
-
-#presilha {
-    width: 170px;
-    height: auto;
-    position: absolute;
-    right: 80%;
-    top: 21em;
-}
-
-
-#osgifs {
-
-    display: flex;
-    /* align-items: center; */
-    flex-direction: column;
-    padding:0 0.5em 0.5em 0.5em;
-    float: left;
-    width: 300px;
-
-}
-
-#ogif1 {
-    width: 150px;
-    height: auto;
-    float: right;
-    border-radius: 50em;
-    margin-left: 50px;
-}
-
-#ogif2 {
-    width: 180px;
-    height: auto;
-
-    float: right;
-    border-radius: 50em;
-    margin: 4px 0 4px 100px;
-}
-
-#ogif3 {
-    width: 170px;
-    height: auto;
-    float: right;
-    border-radius: 50em;
-    margin-left: 50px;
-}
-
-
-.animados {
-    border: 1px solid black;
-    box-shadow: 4px 4px 1px black;
-}
-
-
-
-.pagina {
-    width: 300px;
-    height: auto;
-    float: right;
-}
-
-
-
-#projetos {
-    width: 300px;
-    height: auto;
-    float: right;
-    padding-left: 3em;
-    padding-right: 3em;
-    border-left: black 2px solid;
-
-}
-
-#projetos1 {
-    font-family: 'nina';
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-
-    width: 400px;
-    height: auto;
-    padding-left: 4em;
-    padding-right: 3em;
-    padding-top: 2em;
-    float: left;
-    font-size: 17px;
-}
-
-#projetos01 {
-    height: auto;
-    font-family: 'nina';
-    font-weight: 600;
-    
-    text-shadow: 3px 3px 0 rgb(255, 255, 255);
-    padding-left: 3em;
-    padding-right: 3em;
-    float: center;
-    text-align: center;
-    font-size: 15px;
-}
-
-#introbox{
-    width: 400px;
-}
-
-.setas {
-    width: 120px;
-    height: auto;
-    float: right;
-}
-
-#next {
-    position: fixed;
-    top: 59em;
-    left: 95em;
-}
-
-#into {
-    position: fixed;
-    top: 59em;
-    left: 84em;
-}
-
-
-i {
-    font-size: 2em;
-}
-
-
-
-#bandeija {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#ovo {
-    width: 150px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#clara {
-    width: 150px;
-    height: 250px;
-    border-radius: 10em 10em 0 0;
-    background-color: rgb(230, 230, 230);
-    border: 2px black solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#gema {
-    width: 150px;
-    border-radius: 0 0 10em 10em;
-    background-color: rgb(188, 153, 253);
-    border-top: 2px black solid;
-    border-right: 3px black solid;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#bi {
-    margin-top: 3em;
-}
-}
-
-
-
